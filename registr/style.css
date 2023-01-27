@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+* {
+  padding: 0;
+  /* background-color: #8680b4; */
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://img2.akspic.ru/crops/4/0/1/1/7/171104/171104-anime-art-illustracia-artist-rastenie-3840x2160.jpg);
+}
+.container {
+  width: 37%;
+  min-height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 30px #64ffda;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5%;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+.signup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+.slide-up {
+  top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.slide-up .form-holder,
+.slide-up .submit-btn {
+  opacity: 0;
+  visibility: hidden;
+}
+.slide-up .form-title {
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.slide-up .form-title span {
+  margin-right: 8px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.form-title {
+  color: #000000;
+  font-size: 1.7em;
+  text-align: center;
+}
+span {
+  color: rgb(0, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.form-holder {
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  margin-top: 50px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.input {
+  border: 0;
+  border-color: rgb(0, 0, 0);
+  background-color: #87d1c0;
+  outline: none;
+  box-shadow: none;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 8px 15px;
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  font-size: 12px;
+}
+
+.input:last-child {
+  border-bottom: 0;
+}
+.input:-webkit-input-placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.submit-btn {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(256, 256, 256, 0.7);
+  border: 0;
+  border-radius: 15px;
+  display: block;
+  margin: 15px auto;
+  padding: 15px 45px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.submit-btn:hover {
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form-title {
+  color: white;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.form-holder {
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-top: 50px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #00000046;
+  color: rgba(256, 256, 256, 0.7);
+  border: 0;
+  border-radius: 15px;
+  display: block;
+  margin: 15px auto;
+  padding: 15px 45px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.submit-btn:hover {
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
